@@ -29,5 +29,34 @@
   
 }
 ```
+
+# DELETE '/tasks/:id'
+
+## Request Parameters:-
+
+1) id:- The id of the task which the user wants to delete.
+
+##Example Request:- DELETE /tasks/1
+
+# PUT '/tasks/:id'
+
+## Request Parameters
+
+1) id:- The id of the task which the user wants to update.
+
+
+## Request Body:-
+
+  ```json
+{
+  "id": "ID of Task",
+  "title": "Title of task",
+  "description": "Description of Task",
+  "isCompleted": "Boolean value indicating whether the task in completed or not",
+  "priority": "Priority of task, values can be:- high, medium, low"
+  
+}
+```
+Note:- The user does not need to fill in all the details in the json, just the ones the user wants to update is sufficient enough.
   
   
